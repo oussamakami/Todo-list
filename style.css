@@ -16,7 +16,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(480px, 33.3vw) 33.3vw 33.3vw;
+    grid-template-columns: minmax(450px, 33.3vw) 33.3vw 33.3vw;
     background-color: #fdfdfd;
 }
 
@@ -59,4 +59,39 @@ body {
     padding: 3px 30px;
     border-radius: 3px;
     cursor: pointer;
+}
+
+@media all and (max-width: 1200px) {
+    .image {
+        width: 70%;
+        margin: 80px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .image {
+        width: 60%;
+        margin: 70px;
+    }
+}
+
+@media all and (max-width: 880px) {
+    body {
+        display: block;
+    }
+    .image {
+        display: none;
+    }
+    .text {
+        height: 100vh;
+    }
+}
+
+@media all and (max-width: 600px) {
+    :root {
+        font-size: 14px;
+    }
+    body {
+        text-align: center;
+    }
 }

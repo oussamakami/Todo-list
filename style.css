@@ -17,6 +17,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(480px, 33.3vw) 33.3vw 33.3vw;
+    background-color: #fdfdfd;
 }
 
 .text {
@@ -29,6 +30,10 @@ body {
 
 .image {
     grid-column: 2 / 4;
+    background: url('./imgs/tasks.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 100px;
 }
 
 .container {
